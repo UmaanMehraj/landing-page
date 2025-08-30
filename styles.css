@@ -8,7 +8,9 @@ body {
   padding-top: 12px;
   background-color: #1f2937;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex;
+  justify-content: space-between;
+  padding: 24px 225px 0 225px;
 }
 
 .header .subheading {
@@ -16,25 +18,38 @@ body {
   font-size: 24px;
   font-weight: 500;
 }
-.header a {
+.left,
+.right {
+  display: flex;
+  justify-items: center;
+  gap: 16px;
+}
+.left a {
   color: #e5e7eb;
 }
+
+.left a:hover {
+  color: #3882f6;
+}
+
 .content {
   background-color: #1f2937;
   display: flex;
-  padding: 48px;
-  justify-content: space-around;
+  padding: 48px 225px 48px 225px;
+  justify-content: center;
+  gap: 40px;
 }
 .content .awesome {
-  width: 250px;
-  height: auto;
   color: #f9faf8;
   font-size: 48px;
   font-weight: 900;
 }
 
-.content .sub-awesome {
+.content .awesome .sub-awesome {
   color: #efe7eb;
+  font-size: 18px;
+  color: #e5e7eb;
+  font-weight: normal;
 }
 
 img {
@@ -47,8 +62,85 @@ button {
   width: 90px;
   height: 30px;
   color: #f9faf8;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #79d2e8;
+  color: #000000;
 }
 
 .info {
+  display: flex;
+  padding: 56px;
+  justify-content: center;
+}
+.text {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+}
+.info .box {
+  height: 140px;
+  width: 140px;
+  margin: 20px;
+  border: 3px solid #3882f6;
+  border-radius: 15px;
+}
+.info .box-one .subtext {
+  text-align: center;
+}
+
+.quote {
+  background-color: #efe7eb;
+  padding: 80px 200px 80px 200px;
+  color: #1f2937;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quote .quotation .author {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  justify-self: flex-end;
+}
+
+.footer {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 12px;
+}
+
+.call {
+  background-color: #3882f6;
+  padding: 40px 80px 40px 80px;
+  margin: 40px 200px 40px 200px;
+  border-radius: 10px;
+  color: #f9faf8;
+  display: flex;
+  justify-content: space-between;
+}
+.call .action {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.call .action .sub-action {
+  font-size: 14px;
+  font-weight: normal;
+  color: #e5e7eb;
+}
+
+.call .button button {
+  border: 2px solid #f9faf8;
+  border-radius: 5px;
+}
+.call .button button:hover {
+  background-color: #ecf0f1;
+  color: black;
 }
